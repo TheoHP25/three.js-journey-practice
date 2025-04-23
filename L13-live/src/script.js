@@ -31,7 +31,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     const material = new THREE.MeshMatcapMaterial({ matcap: matcapTexture });
 
     // Text
-    const textGeometry = new TextGeometry("(Debut Avril, petit soucis avec l'animation..)", {
+    const textGeometry = new TextGeometry("Work In Progress", {
         font: font,
         size: 0.4,
         depth: 0.2,
