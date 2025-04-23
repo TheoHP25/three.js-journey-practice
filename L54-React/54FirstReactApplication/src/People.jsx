@@ -19,12 +19,12 @@ function People()
         getPeople()
     },[])
 
-    return <div>
-        <h2>People</h2>
-        <ul>
+    return <div class="py-6">
+        <h2>Des gens fictifs qui viennent d'une API:</h2>
+        <ul class="list-inside list-disc py-6 grid grid-flow-col grid-rows-4 gap-4">
             { people.map((person)=>
             {
-                return <li key={person.id}>{person.name}</li>
+                return <li class="py-2" key={person.id}>{person.name}</li>
             })}
         </ul>
     </div>

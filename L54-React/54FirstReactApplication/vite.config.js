@@ -1,12 +1,15 @@
 import react from '@vitejs/plugin-react'
 import { transformWithEsbuild } from 'vite'
 import restart from 'vite-plugin-restart'
+import tailwindcss from '@tailwindcss/vite'
 
 export default {
     root: 'src/',
     publicDir: '../public/',
     plugins:
     [
+        tailwindcss(),
+        
         // Restart server on static/public file change
         restart({ restart: [ '../public/**', ] }),
 
